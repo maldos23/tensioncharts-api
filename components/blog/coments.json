@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "components_blog_coments",
+  "info": {
+    "name": "coments",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "enumeration",
+      "enum": [
+        "materiales",
+        "normas",
+        "graficas",
+        "notas"
+      ]
+    },
+    "commit": {
+      "type": "richtext"
+    }
+  }
+}

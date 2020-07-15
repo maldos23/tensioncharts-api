@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "materials",
+  "info": {
+    "name": "material"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "norma": {
+      "type": "string"
+    },
+    "creado": {
+      "type": "datetime",
+      "required": true
+    },
+    "normas": {
+      "via": "material",
+      "collection": "norma"
+    }
+  }
+}
